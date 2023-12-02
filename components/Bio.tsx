@@ -1,6 +1,6 @@
 export default function Bio() {
   return (
-    <div className="mb-24">
+    <div className="">
       <p className="text-slate-400 mb-8 ">
         It all started 10 years ago, creating{" "}
         <span className="text-slate-50 font-semibold">HTML/CSS</span> pages for

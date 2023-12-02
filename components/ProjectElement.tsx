@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
+import Chip from "./Chip";
 
 export default function ProjectElement({ image }: { image: StaticImageData }) {
   return (
@@ -10,7 +11,7 @@ export default function ProjectElement({ image }: { image: StaticImageData }) {
           <Image src={image} alt="wigoadventures" />
         </div>
         <div className="flex-1 z-10 ">
-          <h3 className="text-md text-emerald-400 md:text-slate-200 font-semibold mb-2 group-hover:text-emerald-400 ">
+          <h3 className="text-lg text-emerald-400 md:text-slate-200 font-semibold mb-2 group-hover:text-emerald-400 ">
             WIGO OUTDOORS
           </h3>
           <p className="text-xs text-slate-400">
@@ -20,31 +21,11 @@ export default function ProjectElement({ image }: { image: StaticImageData }) {
             and google maps integration
           </p>
           <div className="flex flex-row gap-2 mt-4 flex-wrap ">
-            <div className="bg-emerald-400/10 py-1 px-3 rounded-full ">
-              <p className="text-xs font-medium leading-5 text-emerald-300/90 cursor-pointer ">
-                React native
-              </p>
-            </div>
-            <div className="bg-emerald-400/10 py-1 px-3 rounded-full ">
-              <p className="text-xs font-medium leading-5 text-emerald-300/90 cursor-pointer ">
-                Redux
-              </p>
-            </div>
-            <div className="bg-emerald-400/10 py-1 px-3 rounded-full ">
-              <p className="text-xs font-medium leading-5 text-emerald-300/90 cursor-pointer ">
-                Expo
-              </p>
-            </div>
-            <div className="bg-emerald-400/10 py-1 px-3 rounded-full ">
-              <p className="text-xs font-medium leading-5 text-emerald-300/90 cursor-pointer ">
-                Supabase
-              </p>
-            </div>
-            <div className="bg-emerald-400/10 py-1 px-3 rounded-full ">
-              <p className="text-xs font-medium leading-5 text-emerald-300/90 cursor-pointer ">
-                PostGIS
-              </p>
-            </div>
+            <Chip text="React native" />
+            <Chip text="Redux" />
+            <Chip text="expo" />
+            <Chip text="Supabase" />
+            <Chip text="PostGIS" />
           </div>
         </div>
       </div>
