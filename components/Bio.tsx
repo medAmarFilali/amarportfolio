@@ -24,6 +24,28 @@ export default function Bio() {
         When I am not making website I usually switch to my childhood dream
         which is developing videos games, and learning new languages.
       </p>
+
+      <div className="flex flex-col gap-2 mt-8">
+        <div>Certificates</div>
+        <div className="flex gap-2 items-center">
+          <p className="text-yellow-300 font-semibold ">
+            AWS Cloud Practitioner
+          </p>
+          <p className="text-sm text-slate-400"> - 2023</p>
+        </div>
+        <div className="flex gap-2 items-center  ">
+          <p className="text-yellow-300 font-semibold ">
+            AWS Cloud Architect Associate
+          </p>
+          <p className="text-sm text-slate-400"> - 2023</p>
+        </div>
+        <div className="flex gap-2 items-center  ">
+          <p className="text-slate-400 font-semibold ">
+            AWS Developer Associate
+          </p>
+          <p className="text-sm text-slate-400"> - In Progress</p>
+        </div>
+      </div>
     </div>
   );
 }
