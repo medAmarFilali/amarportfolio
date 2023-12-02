@@ -1,5 +1,6 @@
 import Image from "next/image";
 import amarImage from "../public/images/mohamedamarfilali.jpg";
+import Navigation from "./Navigation";
 import { Github, Linkedin } from "lucide-react";
 
 export default function Presentation() {
@@ -12,7 +13,7 @@ export default function Presentation() {
         <h1 className="text-4xl text-slate-200 font-bold tracking-tight sm:text-4xl ">
           Amar Mohamed Filali
         </h1>
-        <p className="text-lg font-semibold text-slate-300 mt-2  ">
+        <p className="text-lg font-semibold text-emerald-400 mt-2  ">
           Experienced Front-End developer
         </p>
         <p className="font-regular text-slate-400 mt-4 ">
@@ -20,20 +21,7 @@ export default function Presentation() {
           experiences for the web for 10 years.
         </p>
       </div>
-      <ul className="mt-16 hidden md:flex flex-col">
-        <li className="text-sm font-semibold mb-2 cursor-pointer text-slate-100 ">
-          About
-        </li>
-        <li className="text-sm font-semibold mb-2 cursor-pointer text-slate-400  ">
-          Experience
-        </li>
-        <li className="text-sm font-semibold mb-2 cursor-pointer text-slate-400  ">
-          Projects
-        </li>
-        <li className="text-sm font-semibold mb-2 cursor-pointer text-slate-400  ">
-          Blog
-        </li>
-      </ul>
+      <Navigation />
       <div className="flex flex-row gap-2 mt-8">
         <div className="bg-slate-800 rounded-md p-2 hover:bg-slate-600 cursor-pointer transition-all">
           <Github className="w-6 h-6" />

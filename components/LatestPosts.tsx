@@ -5,7 +5,7 @@ import SectionHeading from "./SectionHeading";
 
 export default function LatestPosts() {
   return (
-    <div className="py-32">
+    <div className="py-32" id="latestposts">
       <SectionHeading title="Latest Articles" />
       <div className=" flex flex-col gap-8 ">
         <PostPrevElement

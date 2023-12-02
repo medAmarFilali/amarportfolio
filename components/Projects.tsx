@@ -5,7 +5,7 @@ import SectionHeading from "./SectionHeading";
 
 export default function Projects() {
   return (
-    <>
+    <div id="projects">
       <SectionHeading title="Projects" />
       <div className="flex flex-col gap-4 group/list">
         <ProjectElement image={adventure} />
@@ -15,6 +15,6 @@ export default function Projects() {
         <ProjectElement image={adventure} />
         <ProjectElement image={adventure} />
       </div>
-    </>
+    </div>
   );
 }
