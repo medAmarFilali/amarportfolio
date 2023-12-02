@@ -1,15 +1,12 @@
 import PostPrevElement from "./PostPrevElement";
 import postGisImage from "../public/images/postgisimage.jpg";
 import wpApiCall from "../public/images/wpapicall.png";
+import SectionHeading from "./SectionHeading";
 
 export default function LatestPosts() {
   return (
     <div className="py-32">
-      <div className="py-6  ">
-        <h2 className="text-xl text-slate-200 font-semibold ">
-          Latest Articles
-        </h2>
-      </div>
+      <SectionHeading title="Latest Articles" />
       <div className=" flex flex-col gap-8 ">
         <PostPrevElement
           image={postGisImage}
@@ -23,7 +20,7 @@ export default function LatestPosts() {
         <PostPrevElement
           image={wpApiCall}
           tags={["Wordpress", "PHP", "API"]}
-          title="Creating secure endpoint in wordpress"
+          title="Best way to create secure endpoints in wordpress"
           description="Creating Wordpress endpoints is so easy but securing them is the hardest task, in this post we'll discover the best ways to secure our endpoints..."
         />
       </div>

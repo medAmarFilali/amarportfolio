@@ -27,19 +27,25 @@ export default function Bio() {
 
       <div className="flex flex-col gap-2 mt-8">
         <div>Certificates</div>
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center flex-wrap">
+          <p className="text-green-500 font-semibold ">
+            Google - Foundations of User Experience (UX) Design
+          </p>
+          <p className="text-sm text-slate-400"> - 2023</p>
+        </div>
+        <div className="flex gap-2 items-center flex-wrap">
           <p className="text-yellow-300 font-semibold ">
             AWS Cloud Practitioner
           </p>
           <p className="text-sm text-slate-400"> - 2023</p>
         </div>
-        <div className="flex gap-2 items-center  ">
+        <div className="flex gap-2 items-center flex-wrap  ">
           <p className="text-yellow-300 font-semibold ">
             AWS Cloud Architect Associate
           </p>
           <p className="text-sm text-slate-400"> - 2023</p>
         </div>
-        <div className="flex gap-2 items-center  ">
+        <div className="flex gap-2 items-center flex-wrap  ">
           <p className="text-slate-400 font-semibold ">
             AWS Developer Associate
           </p>

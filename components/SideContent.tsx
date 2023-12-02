@@ -1,4 +1,6 @@
 import Bio from "./Bio";
+import ExpElement from "./ExpElement";
+import Experience from "./Experience";
 import LatestPosts from "./LatestPosts";
 import Projects from "./Projects";
 
@@ -8,6 +10,7 @@ export default function SideContent() {
       <Bio />
       <LatestPosts />
       <Projects />
+      <Experience />
     </div>
   );
 }
