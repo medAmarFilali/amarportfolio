@@ -23,6 +23,11 @@ export default function Navigation() {
           Experience
         </div>
       </Link>
+      <Link href="/blog">
+        <div className="text-sm font-semibold mb-2 cursor-pointer text-slate-400  ">
+          Blog
+        </div>
+      </Link>
     </div>
   );
 }
