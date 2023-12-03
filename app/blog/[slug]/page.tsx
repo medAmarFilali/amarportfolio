@@ -18,8 +18,13 @@ export default async function page({ params }: { params: { slug: string } }) {
     <div>
       {doc && doc.body && doc.body.code && (
         <div className="flex flex-col px-6 py-12 md:px-12 md:py-20 lg:px-44 lg:py-12 max-w-screen-xl min-h-screen mx-auto ">
+          <div className="flex px-8 justify-center mb-12">
+            <h3 className="text-3xl text-emerald-400 font-semibold">
+              {doc.title}
+            </h3>
+          </div>
           {doc.thumbnail && (
-            <div className="mb-4">
+            <div className="">
               <Image
                 src={doc.thumbnail}
                 width={1040}
@@ -29,10 +34,9 @@ export default async function page({ params }: { params: { slug: string } }) {
               />
             </div>
           )}
-          <h3 className="text-3xl text-emerald-400 font-semibold mt-4">
-            {doc.title}
-          </h3>
-          <Mdx code={doc?.body.code} />
+          <div className="flex px-8 justify-center mb-12">
+            <Mdx code={doc?.body.code} />
+          </div>
         </div>
       )}
     </div>

@@ -24,7 +24,7 @@ export default async function BlogPage() {
             <Link
               href={`./${article.slug}`}
               key={article.slug}
-              className="relative group w-1/2"
+              className="relative group w-full md:w-1/2"
             >
               <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-t from-slate-300/10 to-slate-300/5 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
 
