@@ -2,13 +2,37 @@ import PostPrevElement from "./PostPrevElement";
 import postGisImage from "../public/images/postgisimage.jpg";
 import wpApiCall from "../public/images/wpapicall.png";
 import SectionHeading from "./SectionHeading";
+import { allDocs } from "@/.contentlayer/generated";
+import { parseTags } from "@/helpers";
 
-export default function LatestPosts() {
+async function getLatestPosts() {
+  const posts = allDocs;
+
+  if (!posts) null;
+
+  return posts;
+}
+
+export default async function LatestPosts() {
+  const latestArticles = await getLatestPosts();
+
   return (
     <div className="py-32" id="latestposts">
       <SectionHeading title="Latest Articles" />
       <div className=" flex flex-col gap-8 ">
-        <PostPrevElement
+        {latestArticles &&
+          latestArticles.map((article) => (
+            <PostPrevElement
+              key={article.slug}
+              image={article.thumbnail}
+              title={article.title}
+              description={`${article.description?.slice(0, 112)}...`}
+              tags={parseTags(article.tags)}
+              link={article.slug}
+            />
+          ))}
+
+        {/* <PostPrevElement
           image={postGisImage}
           tags={["PostgreSQL", "PostGIS", "Edge Functions"]}
           title="GeoQueries with PostGIS"
@@ -22,7 +46,7 @@ export default function LatestPosts() {
           tags={["Wordpress", "PHP", "API"]}
           title="Best way to create secure endpoints in wordpress"
           description="Creating Wordpress endpoints is so easy but securing them is the hardest task, in this post we'll discover the best ways to secure our endpoints..."
-        />
+        /> */}
       </div>
     </div>
   );
