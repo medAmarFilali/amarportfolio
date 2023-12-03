@@ -16,6 +16,8 @@ export type Doc = {
   title: string
   description?: string | undefined
   thumbnail?: string | undefined
+  tags?: string | undefined
+  date?: string | undefined
   published: boolean
   /** MDX file body */
   body: MDX
