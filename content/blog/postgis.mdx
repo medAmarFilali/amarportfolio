@@ -1,0 +1,62 @@
+---
+title: GeoQueries with postGIS and PostgreSQL
+description: Next.js 14 introduces powerful middleware features that allow you to run code before a request is completed and modify the response based on the incoming request. Middleware can be used for various purposes such as authentication, URL redirects, and customizing the request/response pipeline.
+thumbnail: /images/postgismap.png
+---
+
+### Basic Concepts
+
+Next.js 14 introduces powerful middleware features that allow you to run code before a request is completed and modify the response based on the incoming request. Middleware can be used for various purposes such as authentication, URL redirects, and customizing the request/response pipeline.
+
+![Middleware](/images/postgismap.png)
+
+<Callout>
+  The text below is from the [Tailwind
+  CSS](https://play.tailwindcss.com/uj1vGACRJA?layout=preview) docs. I copied it
+  here to test the markdown styles. **Tailwind is awesome. You should use it.**
+</Callout>
+
+> Advanced Features
+
+- **I often do this thing where list items have headings.**
+
+```jsx
+export function Callout({
+  children,
+  icon,
+  type = "default",
+  ...props
+}: CalloutProps) {
+  return (
+    <div
+      className={cn(
+        "my-6 flex items-start rounded-md border-2 border-slate-800  border-l-4 p-4",
+        {
+          "border-red-900 bg-red-50": type === "danger",
+          "border-yellow-900 bg-yellow-50": type === "warning",
+        }
+      )}
+      {...props}
+    >
+      {icon && <span className="mr-4 text-2xl">{icon}</span>}
+      <div>{children}</div>
+    </div>
+  );
+}
+```
+
+Next.js 14 middlewares offer several advanced features, including:
+Introduction of additional flags for middleware, allowing for more flexibility in how middleware is used.
+Handling advanced use cases, such as handling requests and producing responses directly from the middleware, providing a new level of control over the application's behavior.
+Execution order of middleware, which can be important for the order in which middleware functions are executed.
+Best Practices
+To use middlewares effectively in Next.js 14, follow these best practices:
+Declare a single middleware file in your application, located next to the pages directory and named without an extension.
+Upgrade your existing middleware to the new API, ensuring compatibility with the latest version of Next.js.
+Use Cases
+Next.js 14 middlewares can be used for various purposes, such as:
+Protecting routes: Middleware can be used to limit access to certain pages, ensuring that only authorized users can access specific content.
+Combining middlewares: Middleware can be combined to create more complex and powerful authentication systems, such as using multiple authentication providers.
+Using middleware with Edge Functions: Middleware can be used in conjunction with Edge Functions, allowing for more control over the request/response pipeline and enabling developers to deliver personalized content based on user location or other factors.
+Conclusion
+Next.js 14 middlewares provide powerful features that enable developers to effectively manage authentication, URL redirects, and customization of the request/response pipeline. By following best practices and exploring various use cases, developers can harness the full potential of Next.js 14 middlewares to create secure and feature-rich applications.
