@@ -15,7 +15,8 @@ export type Doc = {
   type: 'Doc'
   title: string
   description?: string | undefined
-  thumbnail?: string | undefined
+  thumbnail: string
+  smallthumbnail?: string | undefined
   tags?: string | undefined
   date?: string | undefined
   published: boolean
