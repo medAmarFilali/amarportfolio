@@ -15,8 +15,6 @@ async function getDocs() {
 export default async function BlogPage() {
   const articles = await getDocs();
 
-  console.log("DOCS: ", articles);
-
   return (
     <div className="flex flex-col px-6 py-12 md:px-12 md:py-20 lg:px-44 lg:py-12 max-w-screen-xl min-h-screen mx-auto">
       <SectionHeading title="Blog" />
